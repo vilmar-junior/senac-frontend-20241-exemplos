@@ -16,11 +16,11 @@ export class VacinaListagemComponent implements OnInit  {
 
   public vacinas: Array<Vacina> = new Array();
   public seletor: VacinaSeletor = new VacinaSeletor();
+
   public paises: Array<Pais> = new Array();
 
   constructor(private vacinaService: VacinaService,
-              private paisService: PaisService){
-  }
+              private paisService: PaisService){}
 
   ngOnInit(): void {
     this.consultarTodasVacinas();

@@ -1,5 +1,6 @@
  <pre>Seletor: {{ seletor | json}}</pre>
 <!--<pre>Países: {{ paises | json}}</pre> -->
+<pre>{{ seletor | json}}</pre>
 <div class="container">
     <form>
         <div class="card">
@@ -19,8 +20,7 @@
                     </div>
                     <div class="col-md-6 form-group">
                         <label for="nomeVacina" class="form-label">Nome:</label>
-                        <input type="text" class="form-control" name="nomeVacina"
-                               [(ngModel)]="seletor.nomeVacina">
+                        <input type="text" class="form-control" name="nomeVacina">
                     </div>
                 </div>
                 <div class="row">
@@ -38,6 +38,8 @@
     </form>
     
     <h2 class="">Vacinas</h2>
+    <br><br>
+    
     <table class="table table-hover table-striped">
         <thead>
             <th>Nome</th>
