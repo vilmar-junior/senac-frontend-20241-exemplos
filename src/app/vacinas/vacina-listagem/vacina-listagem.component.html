@@ -24,6 +24,24 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="nomePais" class="form-label">Pesquisador:</label>
+                        <select class="form-control" name="nomePais"
+                                [(ngModel)]="seletor.nomePais">
+                            <option>Pelé</option>     
+                            <option>Garrincha</option>     
+                        </select>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="nomeVacina" class="form-label">Início da pesquisa. De:</label>
+                        <input type="date" class="form-control" name="nomeVacina">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="nomeVacina" class="form-label">Até:</label>
+                        <input type="date" class="form-control" name="nomeVacina">
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-12 form-group">
                         <label for="btnPesquisar" class="form-label">&nbsp;</label>
                         <button type="submit" class="btn btn-primary" name="btnPesquisar"
