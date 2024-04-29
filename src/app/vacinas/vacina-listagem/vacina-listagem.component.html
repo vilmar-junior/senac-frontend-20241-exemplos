@@ -14,7 +14,7 @@
                         <select class="form-control" name="nomePais"
                                 [(ngModel)]="seletor.nomePais">
                             @for(p of paises; track p.id) {
-                               <option value="{{ p.nome }}">{{ p.nome }} ({{ p.sigla }})</option>     
+                               <option [ngValue]="p">{{ p.nome }} ({{ p.sigla }})</option>     
                             }
                         </select>
                     </div>
